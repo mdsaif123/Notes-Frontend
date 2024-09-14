@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
+<<<<<<< HEAD
 import { NavLink,  useNavigate, } from "react-router-dom";
+=======
+import { NavLink,  useNavigate} from "react-router-dom";
+>>>>>>> 84b1c665761cb9180a695fcad35eba34f7a5acd2
 import { useAuth } from "../context/authcontext";
 
 const Login = () => {
@@ -13,7 +17,11 @@ const navigate=useNavigate()
   const [password, setpassword] = useState("");
 
   const [auth,setauth]=useAuth()
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 84b1c665761cb9180a695fcad35eba34f7a5acd2
  
 
   const handleSubmit = async (e) => {
