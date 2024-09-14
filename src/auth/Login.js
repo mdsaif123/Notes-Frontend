@@ -36,8 +36,8 @@ const navigate=useNavigate()
         localStorage.setItem("auth", JSON.stringify(res.data));
       
         // Log the navigation path
-        console.log("Navigating to /dashboard/user");
-        navigate("/dashboard/user")
+        
+        navigate("")
         // https://prismatic-trifle-cbeeb9.netlify.app
       } else {
         toast.error(res.data.message);
