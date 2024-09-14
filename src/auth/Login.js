@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
-import { NavLink,  useNavigate, useLocation } from "react-router-dom";
+import { NavLink,  useNavigate, } from "react-router-dom";
 import { useAuth } from "../context/authcontext";
 
 const Login = () => {
@@ -13,7 +13,7 @@ const navigate=useNavigate()
   const [password, setpassword] = useState("");
 
   const [auth,setauth]=useAuth()
-  const location=useLocation()
+ 
  
 
   const handleSubmit = async (e) => {
@@ -33,7 +33,7 @@ const navigate=useNavigate()
       
         // Log the navigation path
         console.log("Navigating to /dashboard/user");
-        navigate(location.state || "https://mdsaif123.github.io/dashboard/user")
+        navigate("https://mdsaif123.github.io/dashboard/user")
         // https://prismatic-trifle-cbeeb9.netlify.app
       } else {
         toast.error(res.data.message);
