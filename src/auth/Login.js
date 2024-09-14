@@ -33,7 +33,7 @@ const navigate=useNavigate()
       
         // Log the navigation path
         console.log("Navigating to /dashboard/user");
-        navigate("https://mdsaif123.github.io/dashboard/user")
+        navigate("https://mdsaif123.github.io/https://66e530d2f79a9afd7115c9f7--prismatic-trifle-cbeeb9.netlify.app/dashboard/user/dashboard/user")
         // https://prismatic-trifle-cbeeb9.netlify.app
       } else {
         toast.error(res.data.message);
